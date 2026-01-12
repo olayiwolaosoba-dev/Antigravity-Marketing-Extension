@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Extension | Growth Marketing & Demand Generation Partner</title>
+  <meta name="description"
+    content="Marketing Extension plugs into your team as a dedicated growth marketing partner — from strategy to execution, we plan, launch, and scale campaigns that drive revenue.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF6B3D',
+            'primary-soft': '#FFE4D8',
+            'bg-dark': '#05060A',
+            'bg-light': '#FFFFFF',
+            'bg-gray': '#F5F5F7',
+            'text-dark': '#0B0D17',
+            'text-muted': '#6B7280',
+          },
+          animation: {
+            'scroll': 'scroll 40s linear infinite',
+          },
+          keyframes: {
+            scroll: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
+            }
+          },
+          fontFamily: {
+            sans: ['Albert Sans', 'sans-serif'],
+            display: ['Bricolage Grotesque', 'sans-serif'],
+          },
+          borderRadius: {
+            'lg': '24px',
+            'md': '12px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Albert Sans', sans-serif;
+      background-color: #FFFFFF;
+      color: #0B0D17;
+      overflow-x: hidden;
+    }
+
+    .font-display {
+      font-family: 'Bricolage Grotesque', sans-serif;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    @keyframes scramble {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-scramble {
+      animation: scramble 0.5s ease-out forwards;
+    }
+
+    .clipped-bottom {
+      clip-path: ellipse(150% 100% at 50% 0%);
+    }
+
+    .clipped-top {
+      clip-path: ellipse(150% 100% at 50% 100%);
+    }
+
+    /* Benchmark Reveal Animation */
+    .reveal-text {
+      overflow: hidden;
+    }
+
+    .reveal-text span {
+      display: block;
+      transform: translateY(100%);
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-text.visible span {
+      transform: translateY(0);
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.462.0?external=react,react-dom",
+    "framer-motion": "https://esm.sh/framer-motion@11.11.17?external=react,react-dom"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
